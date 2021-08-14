@@ -25,23 +25,28 @@ a {
     transition: none !important;
 }
 
+.layui-logo {
+    margin: 0 10px;
+    background-color: #23262e !important;
+}
+
 .userinfo {
     height: 60px;
     text-align: center;
     line-height: 60px;
-    font-size: 12px;
+    font-size: 14px;
     user-select: none;
 }
 
 .layui-side-scroll .userinfo {
-    border-bottom: 4px solid #282b33;
+    border-bottom: 2px solid #282b33;
 }
 
 .text-avater {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: red;
+    background-color: #009688;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;

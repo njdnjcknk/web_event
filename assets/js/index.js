@@ -6,7 +6,7 @@ $(function() {
         layer.confirm('确定是否退出', { icon: 3, title: '提示' }, function(index) {
             //do something
             localStorage.removeItem("token")
-            window.open("/login.html", "_blank")
+            location.href = '/login.html'
             layer.close(index);
         });
     })

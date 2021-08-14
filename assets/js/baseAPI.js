@@ -8,7 +8,7 @@ $.ajaxPrefilter(function(options) {
         }
     };
     options.complete = function(res) {
-        console.log(res);
+        // console.log(res);
         if (res.responseJSON.code == 1) {
             localStorage.removeItem("token");
             location.href = ("/login.html")
