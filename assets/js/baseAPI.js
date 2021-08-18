@@ -11,7 +11,7 @@ $.ajaxPrefilter(function(options) {
     // 无论ajax请求成功或失败都会调用这个函数
     options.complete = function(res) {
         // console.log(res);
-        if (res.responseJSON.code == 1) {
+        if (res.responseJSON.code == 1 && res.responseJSON.message === '身份认证失败！') {
             localStorage.removeItem("token");
             location.href = ("/login.html")
         }
